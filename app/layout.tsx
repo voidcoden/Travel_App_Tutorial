@@ -1,18 +1,19 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+
+import './globals.css'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Travel",
-  description: "Travel UI/UX App for Camping",
-};
+  title: 'Travel',
+  description: 'Travel UI/UX App for Camping',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <body>
@@ -23,5 +24,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  );
+  )
 }
